@@ -1,4 +1,4 @@
-#!/usr/local/opt/node@18/bin/node
+#!/usr/bin/node
 
 const axios = require('axios');
 
