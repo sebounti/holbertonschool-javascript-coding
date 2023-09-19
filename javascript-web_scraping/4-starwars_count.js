@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!/usr/local/opt/node@18/bin/node
 
 const request = require('request');
 
@@ -17,7 +17,8 @@ request(apiUrl, function (error, response, body) {
 
   // Filtrer les films où Wedge Antilles apparaît
     const filmsWithWedgeAntilles = filmsData.results.filter((film) => {
-    return film.characters.includes(`https://swapi-api.hbtn.io/api/people/${characterId}/`);
+    return film.characters.includes/
+    (`https://swapi-api.hbtn.io/api/people/${characterId}/`);
   });
 
   // print le nombre de films avec Wedge Antilles
