@@ -1,4 +1,4 @@
-#!/usr/local/opt/node@18/bin/node
+#!/usr//bin/node
 
 const request = require('request');
 const fs = require('fs');
@@ -13,7 +13,7 @@ request(url, function (error, response, body) {
     return;
   }
 
-  // Check if the request was successful (status code 200)
+  // Check if the request was  successful (status code 200)
   if (response.statusCode === 200) {
     // Write the response body to the specified file
     fs.writeFile(filePath, body, 'utf-8', function (err) {
