@@ -12,14 +12,14 @@ request(apiUrl, function (error, response, body) {
     return;
   }
 
-// Analyser la réponse JSON
+  // Analyser la réponse JSON
   const filmsData = JSON.parse(body);
 
   // Filtrer les films où Wedge Antilles apparaît
-    const filmsWithWedgeAntilles = filmsData.results.filter((film) => {
-    return film.characters.includes(`https://swapi-api.hbtn.io/api/people/${characteId}/`);
+  const filmsWithWedgeAntilles = filmsData.results.filter((film) => {
+    return film.characters.includes(`https://swapi-api.hbtn.io/api/people/${ID}/`);
   });
 
   // print le nombre de films avec Wedge Antilles
-    console.log(filmsWithWedgeAntilles.length);
+  console.log(filmsWithWedgeAntilles.length);
 });
